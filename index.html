@@ -67,10 +67,11 @@
   
     <div class="grid grid-cols-2 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
   
-      <!-- MATLAB -->
-      <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
-        <!-- Circle -->
-        <div class="relative w-28 h-28 flex-shrink-0">
+      <!-- Left column: Circles -->
+      <div class="flex flex-col gap-12 md:gap-8 items-center md:items-start w-full md:w-1/2">
+        
+        <!-- MATLAB -->
+        <div class="relative w-28 h-28">
           <svg class="transform -rotate-90 w-28 h-28">
             <circle cx="56" cy="56" r="50" stroke="#e5e7eb" stroke-width="10" fill="none"/>
             <circle cx="56" cy="56" r="50" stroke="#a39081" stroke-width="10" fill="none"
@@ -79,18 +80,10 @@
           <div class="absolute inset-0 flex items-center justify-center">
             <span class="text-xl font-bold text-[#6E6E6E]">80%</span>
           </div>
+          <p class="mt-3 font-medium text-[#6E6E6E] text-center">MATLAB</p>
         </div>
-        <!-- Description -->
-        <div class="flex-1">
-          <h3 class="text-xl font-semibold text-[#6E6E6E]">MATLAB</h3>
-          <p class="text-[#6E6E6E] mt-2">
-            Used MATLAB for data analysis, plotting S-curves, and developing a GUI for movement compensation experiments. Applied signal processing and control algorithms.
-          </p>
-        </div>
-      </div>
   
-      <!-- Python -->
-      <div class="flex flex-col items-center">
+        <!-- Python -->
         <div class="relative w-28 h-28">
           <svg class="transform -rotate-90 w-28 h-28">
             <circle cx="56" cy="56" r="50" stroke="#e5e7eb" stroke-width="10" fill="none"/>
@@ -100,55 +93,77 @@
           <div class="absolute inset-0 flex items-center justify-center">
             <span class="text-xl font-bold text-[#6E6E6E]">60%</span>
           </div>
+          <p class="mt-3 font-medium text-[#6E6E6E] text-center">Python</p>
         </div>
-        <p class="mt-3 font-medium text-[#6E6E6E]">Python</p>
-      </div>
   
-      <!-- C++ -->
-      <div class="flex flex-col items-center">
-        <div class="relative w-28 h-28">
-          <svg class="transform -rotate-90 w-28 h-28">
-            <circle cx="56" cy="56" r="50" stroke="#e5e7eb" stroke-width="10" fill="none"/>
-            <circle cx="56" cy="56" r="50" stroke="#e4d6c3" stroke-width="10" fill="none"
-              stroke-dasharray="314" stroke-dashoffset="94" stroke-linecap="round"/>
-          </svg>
-          <div class="absolute inset-0 flex items-center justify-center">
-            <span class="text-xl font-bold text-[#6E6E6E]">70%</span>
+        <!-- C++ -->
+        <div class="flex flex-col items-center">
+          <div class="relative w-28 h-28">
+            <svg class="transform -rotate-90 w-28 h-28">
+              <circle cx="56" cy="56" r="50" stroke="#e5e7eb" stroke-width="10" fill="none"/>
+              <circle cx="56" cy="56" r="50" stroke="#e4d6c3" stroke-width="10" fill="none"
+                stroke-dasharray="314" stroke-dashoffset="94" stroke-linecap="round"/>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <span class="text-xl font-bold text-[#6E6E6E]">70%</span>
+            </div>
           </div>
+          <p class="mt-3 font-medium text-[#6E6E6E]">C++</p>
         </div>
-        <p class="mt-3 font-medium text-[#6E6E6E]">C++</p>
-      </div>
-  
-      <!-- ROS -->
-      <div class="flex flex-col items-center">
-        <div class="relative w-28 h-28">
-          <svg class="transform -rotate-90 w-28 h-28">
-            <circle cx="56" cy="56" r="50" stroke="#e5e7eb" stroke-width="10" fill="none"/>
-            <circle cx="56" cy="56" r="50" stroke="#a39081" stroke-width="10" fill="none"
-              stroke-dasharray="314" stroke-dashoffset="280" stroke-linecap="round"/>
-          </svg>
-          <div class="absolute inset-0 flex items-center justify-center">
-            <span class="text-xl font-bold text-[#6E6E6E]">50%</span>
+    
+        <!-- ROS -->
+        <div class="flex flex-col items-center">
+          <div class="relative w-28 h-28">
+            <svg class="transform -rotate-90 w-28 h-28">
+              <circle cx="56" cy="56" r="50" stroke="#e5e7eb" stroke-width="10" fill="none"/>
+              <circle cx="56" cy="56" r="50" stroke="#a39081" stroke-width="10" fill="none"
+                stroke-dasharray="314" stroke-dashoffset="280" stroke-linecap="round"/>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <span class="text-xl font-bold text-[#6E6E6E]">50%</span>
+            </div>
           </div>
+          <p class="mt-3 font-medium text-[#6E6E6E]">ROS</p>
         </div>
-        <p class="mt-3 font-medium text-[#6E6E6E]">ROS</p>
-      </div>
-  
-      <!-- R -->
-      <div class="flex flex-col items-center">
-        <div class="relative w-28 h-28">
-          <svg class="transform -rotate-90 w-28 h-28">
-            <circle cx="56" cy="56" r="50" stroke="#e5e7eb" stroke-width="10" fill="none"/>
-            <circle cx="56" cy="56" r="50" stroke="#cbb89d" stroke-width="10" fill="none"
-              stroke-dasharray="314" stroke-dashoffset="188" stroke-linecap="round"/>
-          </svg>
-          <div class="absolute inset-0 flex items-center justify-center">
-            <span class="text-xl font-bold text-[#6E6E6E]">40%</span>
+    
+        <!-- R -->
+        <div class="flex flex-col items-center">
+          <div class="relative w-28 h-28">
+            <svg class="transform -rotate-90 w-28 h-28">
+              <circle cx="56" cy="56" r="50" stroke="#e5e7eb" stroke-width="10" fill="none"/>
+              <circle cx="56" cy="56" r="50" stroke="#cbb89d" stroke-width="10" fill="none"
+                stroke-dasharray="314" stroke-dashoffset="188" stroke-linecap="round"/>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <span class="text-xl font-bold text-[#6E6E6E]">40%</span>
+            </div>
           </div>
+          <p class="mt-3 font-medium text-[#6E6E6E]">R</p>
         </div>
-        <p class="mt-3 font-medium text-[#6E6E6E]">R</p>
-      </div>
   
+      </div>
+      <!-- Right column: Descriptions -->
+      <div class="flex flex-col gap-12 md:gap-8 w-full md:w-1/2">
+        
+        <!-- MATLAB description -->
+        <div>
+          <h3 class="text-xl font-semibold text-[#6E6E6E]">MATLAB</h3>
+          <p class="text-[#6E6E6E] mt-2">
+            Used MATLAB for data analysis, plotting S-curves, and developing a GUI for movement compensation experiments. Applied signal processing and control algorithms.
+          </p>
+        </div>
+  
+        <!-- Python description -->
+        <div>
+          <h3 class="text-xl font-semibold text-[#6E6E6E]">Python</h3>
+          <p class="text-[#6E6E6E] mt-2">
+            Leveraged Python for scripting, ROS node development, and data processing. Implemented algorithms for sensor integration and robot motion control.
+          </p>
+        </div>
+  
+        <!-- Repeat for C++, ROS, R, etc. -->
+  
+      </div>
     </div>
   </section>
 
