@@ -193,35 +193,43 @@
   </section>
 
 
-
+  <!--         <p class="text-[#6E6E6E]">A sensor-based wearable for capturing arm movements...</p> -->
   <!-- Projects -->
-  <section id="projects" class="py-24 px-8 bg-[#F7F2F0]">
-    <h2 class="text-3xl font-bold mb-12 text-center text-[#6E6E6E]">Projects</h2>
-    
-    <div class="grid md:grid-cols-3 gap-6">
-      <!-- Project Card -->
-      <div 
-        onclick="openModal('project1')" 
-        class="cursor-pointer bg-[#E4D7B9] p-4 rounded shadow hover:shadow-lg transition"
-      >
-        <h3 class="text-xl font-semibold mb-2 text-center text-[#6E6E6E]">ROS-Based Control Architecture for an Underwater Vehicle</h3>
-<!--         <p class="text-[#6E6E6E]">A sensor-based wearable for capturing arm movements...</p> -->
-      </div>
+  <section id="projects" class="relative py-24 px-8 bg-[#F7F2F0] overflow-hidden">
+    <!-- Decorative bubbles -->
+    <div class="absolute -top-24 -right-24 w-72 h-72 bg-[#E4D7B9] rounded-full opacity-20"></div>
+    <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-[#6E6E6E] rounded-full opacity-10"></div>
   
-      <div 
-        onclick="openModal('project2')" 
-        class="cursor-pointer bg-[#E4D7B9] p-4 rounded shadow hover:shadow-lg transition"
-      >
-        <h3 class="text-xl font-semibold mb-2 text-center text-[#6E6E6E]">Autonomous Vehicle Design and Control</h3>
-<!--         <p class="text-[#6E6E6E]">Optimizing real-time control algorithms for autonomous racing robots...</p> -->
-      </div>
+    <div class="relative z-10 max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-12 text-center text-[#6E6E6E]">Projects</h2>
   
-      <div 
-        onclick="openModal('project3')" 
-        class="cursor-pointer bg-[#E4D7B9] p-4 rounded shadow hover:shadow-lg transition"
-      >
-        <h3 class="text-xl font-semibold mb-2 text-center text-[#6E6E6E]">Haptic Feedback Device Research</h3>
-<!--         <p class="text-[#6E6E6E]">Developed a movement compensation device for wrist augmentation...</p> -->
+      <!-- Circle Project Grid -->
+      <div class="grid md:grid-cols-3 gap-12 justify-items-center">
+        
+        <!-- Project 1 -->
+        <div 
+          onclick="openModal('project1')" 
+          class="cursor-pointer w-48 h-48 flex items-center justify-center bg-[#E4D7B9] rounded-full shadow hover:shadow-lg transition text-center p-6"
+        >
+          <h3 class="text-lg font-semibold text-black">ROS-Based Control Architecture for an Underwater Vehicle</h3>
+        </div>
+  
+        <!-- Project 2 -->
+        <div 
+          onclick="openModal('project2')" 
+          class="cursor-pointer w-48 h-48 flex items-center justify-center bg-[#E4D7B9] rounded-full shadow hover:shadow-lg transition text-center p-6"
+        >
+          <h3 class="text-lg font-semibold text-black">Autonomous Vehicle Design and Control</h3>
+        </div>
+  
+        <!-- Project 3 -->
+        <div 
+          onclick="openModal('project3')" 
+          class="cursor-pointer w-48 h-48 flex items-center justify-center bg-[#E4D7B9] rounded-full shadow hover:shadow-lg transition text-center p-6"
+        >
+          <h3 class="text-lg font-semibold text-black">Haptic Feedback Device Research</h3>
+        </div>
+  
       </div>
     </div>
   </section>
@@ -232,7 +240,7 @@
       <!-- Close Button -->
       <button onclick="closeModal('project1')" class="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl">&times;</button>
       
-      <h3 class="text-2xl font-bold mb-4 text-[#6E6E6E]">Wearable Robot Arm</h3>
+      <h3 class="text-2xl font-bold mb-4 text-[#6E6E6E]">ROS-Based Control Architecture for an Underwater Vehicle</h3>
       <p class="text-[#6E6E6E] leading-relaxed">
         Designed a wearable device with IMU sensors to track shoulder, elbow, and wrist joint movements in real time. 
         Integrated motion data with a Baxter robot to mimic human arm motion. 
@@ -244,7 +252,7 @@
   <div id="project2" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
     <div class="bg-white w-11/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg relative shadow-lg">
       <button onclick="closeModal('project2')" class="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl">&times;</button>
-      <h3 class="text-2xl font-bold mb-4 text-[#6E6E6E]">Fast Robots</h3>
+      <h3 class="text-2xl font-bold mb-4 text-[#6E6E6E]">Autonomous Vehicle Design and Control</h3>
       <p class="text-[#6E6E6E] leading-relaxed">
         Built and programmed autonomous racing robots using Python and C++. 
         Focused on localization with IMUs and time-of-flight sensors, real-time motor control, and trajectory optimization.
@@ -255,7 +263,7 @@
   <div id="project3" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
     <div class="bg-white w-11/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg relative shadow-lg">
       <button onclick="closeModal('project3')" class="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl">&times;</button>
-      <h3 class="text-2xl font-bold mb-4 text-[#6E6E6E]">Haptic Feedback Device</h3>
+      <h3 class="text-2xl font-bold mb-4 text-[#6E6E6E]">Haptic Feedback Device Research</h3>
       <p class="text-[#6E6E6E] leading-relaxed">
         Researched and characterized eccentric rotating mass and voice coil motors for movement compensation devices. 
         Designed MATLAB applications for automated data collection with DAQ systems and improved device circuitry for human-subject testing.
