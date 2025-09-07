@@ -197,26 +197,83 @@
   <!-- Projects -->
   <section id="projects" class="py-24 px-8 bg-[#F7F2F0]">
     <h2 class="text-3xl font-bold mb-12 text-center text-[#6E6E6E]">Projects</h2>
+    
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-[#E4D7B9] p-4 rounded shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2 text-[#6E6E6E]">Project 1</h3>
-        <p class="text-[#6E6E6E] mb-4">Short description of project 1.</p>
-        <a href="#" class="underline text-[#6E6E6E] hover:text-[#333333]">View More</a>
+      <!-- Project Card -->
+      <div 
+        onclick="openModal('project1')" 
+        class="cursor-pointer bg-[#E4D7B9] p-4 rounded shadow hover:shadow-lg transition"
+      >
+        <h3 class="text-xl font-semibold mb-2 text-[#6E6E6E]">Wearable Robot Arm</h3>
+        <p class="text-[#6E6E6E]">A sensor-based wearable for capturing arm movements...</p>
       </div>
-      <div class="bg-[#E4D7B9] p-4 rounded shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2 text-[#6E6E6E]">Project 2</h3>
-        <p class="text-[#6E6E6E] mb-4">Short description of project 2.</p>
-        <a href="#" class="underline text-[#6E6E6E] hover:text-[#333333]">View More</a>
+  
+      <div 
+        onclick="openModal('project2')" 
+        class="cursor-pointer bg-[#E4D7B9] p-4 rounded shadow hover:shadow-lg transition"
+      >
+        <h3 class="text-xl font-semibold mb-2 text-[#6E6E6E]">Fast Robots</h3>
+        <p class="text-[#6E6E6E]">Optimizing real-time control algorithms for autonomous racing robots...</p>
       </div>
-      <div class="bg-[#E4D7B9] p-4 rounded shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2 text-[#6E6E6E]">Project 3</h3>
-        <p class="text-[#6E6E6E] mb-4">Short description of project 3.</p>
-        <a href="#" class="underline text-[#6E6E6E] hover:text-[#333333]">View More</a>
+  
+      <div 
+        onclick="openModal('project3')" 
+        class="cursor-pointer bg-[#E4D7B9] p-4 rounded shadow hover:shadow-lg transition"
+      >
+        <h3 class="text-xl font-semibold mb-2 text-[#6E6E6E]">Haptic Feedback Device</h3>
+        <p class="text-[#6E6E6E]">Developed a movement compensation device for wrist augmentation...</p>
       </div>
     </div>
   </section>
+  
+  <!-- Modal Template -->
+  <div id="project1" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-white w-11/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg relative shadow-lg">
+      <!-- Close Button -->
+      <button onclick="closeModal('project1')" class="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl">&times;</button>
+      
+      <h3 class="text-2xl font-bold mb-4 text-[#6E6E6E]">Wearable Robot Arm</h3>
+      <p class="text-[#6E6E6E] leading-relaxed">
+        Designed a wearable device with IMU sensors to track shoulder, elbow, and wrist joint movements in real time. 
+        Integrated motion data with a Baxter robot to mimic human arm motion. 
+        Involved 3D printing, sensor integration, and ROS communication.
+      </p>
+    </div>
+  </div>
+  
+  <div id="project2" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-white w-11/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg relative shadow-lg">
+      <button onclick="closeModal('project2')" class="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl">&times;</button>
+      <h3 class="text-2xl font-bold mb-4 text-[#6E6E6E]">Fast Robots</h3>
+      <p class="text-[#6E6E6E] leading-relaxed">
+        Built and programmed autonomous racing robots using Python and C++. 
+        Focused on localization with IMUs and time-of-flight sensors, real-time motor control, and trajectory optimization.
+      </p>
+    </div>
+  </div>
+  
+  <div id="project3" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-white w-11/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg relative shadow-lg">
+      <button onclick="closeModal('project3')" class="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl">&times;</button>
+      <h3 class="text-2xl font-bold mb-4 text-[#6E6E6E]">Haptic Feedback Device</h3>
+      <p class="text-[#6E6E6E] leading-relaxed">
+        Researched and characterized eccentric rotating mass and voice coil motors for movement compensation devices. 
+        Designed MATLAB applications for automated data collection with DAQ systems and improved device circuitry for human-subject testing.
+      </p>
+    </div>
+  </div>
+  
+  <!-- JS -->
+  <script>
+    function openModal(id) {
+      document.getElementById(id).classList.remove('hidden');
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.add('hidden');
+    }
+  </script>
 
-  <!-- Projects -->
+  <!-- Personal Interests -->
   <section id="personalInterests" class="min-h-screen flex flex-col justify-center p-8 bg-[#FFFFFF]">
 <!--     <h2 class="text-3xl font-bold mb-12 text-center text-[#6E6E6E]">Projects</h2>
     <div class="grid md:grid-cols-3 gap-6">
