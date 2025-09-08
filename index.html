@@ -197,9 +197,6 @@
   <!--        bg-[#F7F2F0] <p class="text-[#6E6E6E]">A sensor-based wearable for capturing arm movements...</p> -->
   <!-- Projects -->
   <section id="projects" class="relative py-24 px-8 overflow-hidden">
-    <!-- Decorative bubbles -->
-<!--     <div class="absolute -top-24 -right-24 w-72 h-72 bg-[#E4D7B9] rounded-full opacity-20"></div>
-    <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-[#6E6E6E] rounded-full opacity-10"></div> -->
   
     <div class="relative z-10 max-w-6xl mx-auto px-6">
       <h2 class="text-3xl font-bold mb-12 text-center text-[#6E6E6E]">Recent Projects</h2>
@@ -240,21 +237,31 @@
     <div class="bg-white w-11/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg relative shadow-lg">
       <!-- Close Button -->
       <button onclick="closeModal('project1')" class="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl">&times;</button>
-      
-      <h3 class="text-2xl font-bold mb-4 text-[#6E6E6E]">ROS-Based Control Architecture for an Underwater Vehicle</h3>
-      <p class="text-[#6E6E6E] leading-relaxed">
-        Designed a wearable device with IMU sensors to track shoulder, elbow, and wrist joint movements in real time. 
-        Integrated motion data with a Baxter robot to mimic human arm motion. 
-        Involved 3D printing, sensor integration, and ROS communication.
+      <h3 class="text-2xl font-bold mb-4 text-center text-[#6E6E6E]">ROS-Based Control Architecture for an Underwater Vehicle</h3>
+      <p class="text-[#6E6E6E] text-center leading-relaxed">
+        Migrated a hybrid MATLAB-ROS control framework for a 6-DOF underwater vehicle into a fully ROS-based system. 
+        Designed a custom ROS node to handle state derivative calculations, subscribe to thruster data, and publish updated state matrices. 
+        Worked under Professor Louis Whitcomb at Johns Hopkins University alongside his PhD research team.
       </p>
+      <h4 class="text-lg font-semibold text-[#6E6E6E] mb-2">Challenges:</h4>
+      <ul class="list-disc list-inside text-[#6E6E6E] mb-4">
+        <li>Adapting MATLAB algorithms into ROS for the first time required not only translating syntax but also understanding ROS conventions for nodes, topics, and message structures.</li>
+        <li>Balancing limited project time with the complexity of real-time system integration added to the difficulty.</li>
+      </ul>
+  
+      <h4 class="text-lg font-semibold text-[#6E6E6E] mb-2">Skills Developed:</h4>
+      <ul class="list-disc list-inside text-[#6E6E6E]">
+        <li>Strengthened knowledge of ROS architecture, real-time control algorithms, and multi-thruster coordination.</li>
+        <li>Improved debugging strategies, system-level thinking, and collaboration in a high-level research environment.</li>
+      </ul>
     </div>
   </div>
   
   <div id="project2" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
     <div class="bg-white w-11/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg relative shadow-lg">
       <button onclick="closeModal('project2')" class="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl">&times;</button>
-      <h3 class="text-2xl font-bold mb-4 text-[#6E6E6E]">Autonomous Vehicle Design and Control</h3>
-      <p class="text-[#6E6E6E] leading-relaxed">
+      <h3 class="text-2xl font-bold mb-4 text-center text-[#6E6E6E]">Autonomous Vehicle Design and Control</h3>
+      <p class="text-[#6E6E6E] text-center leading-relaxed">
         Built and programmed autonomous racing robots using Python and C++. 
         Focused on localization with IMUs and time-of-flight sensors, real-time motor control, and trajectory optimization.
       </p>
@@ -264,8 +271,8 @@
   <div id="project3" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
     <div class="bg-white w-11/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg relative shadow-lg">
       <button onclick="closeModal('project3')" class="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl">&times;</button>
-      <h3 class="text-2xl font-bold mb-4 text-[#6E6E6E]">Haptic Feedback Device Research</h3>
-      <p class="text-[#6E6E6E] leading-relaxed">
+      <h3 class="text-2xl font-bold mb-4 text-center text-[#6E6E6E]">Haptic Feedback Device Research</h3>
+      <p class="text-[#6E6E6E] text-center leading-relaxed">
         Researched and characterized eccentric rotating mass and voice coil motors for movement compensation devices. 
         Designed MATLAB applications for automated data collection with DAQ systems and improved device circuitry for human-subject testing.
       </p>
