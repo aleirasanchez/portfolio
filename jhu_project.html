@@ -13,7 +13,7 @@
   </style>
 </head>
 <body class="scroll-smooth bg-[#FFFFFF] text-[#6E6E6E]">
-  <div class="max-w-5xl mx-auto p-8">
+  <div class="max-w-6xl mx-auto p-8">
     
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 right-0 bg-[#FFFFFF] shadow z-50">
@@ -27,45 +27,54 @@
     </nav>
     
     <!-- Title -->
-    <h1 class="text-3xl font-bold mb-6 text-center text-[#6E6E6E]">
+    <h1 class="text-3xl font-bold mb-6 text-center pt-20 text-[#6E6E6E]">
       ROS-Based Control Architecture for an Underwater Vehicle
     </h1>
 
     <!-- Overview -->
-    <p class="text-lg text-center mb-8">
+    <p class="text-lg text-center mb-12 max-w-3xl mx-auto">
       Migrated a hybrid MATLAB-ROS control framework for a 6-DOF underwater vehicle into a fully ROS-based system. 
       Designed a custom ROS node to handle state derivative calculations, subscribe to thruster data, and publish updated state matrices. 
       Worked under <em>Professor Louis Whitcomb</em> at <strong>Johns Hopkins University</strong> alongside his PhD research team.
     </p>
 
-    <!-- Challenges -->
-    <h2 class="text-2xl font-semibold mt-8 mb-4 text-[#6E6E6E]">Challenges</h2>
-    <ul class="list-disc list-inside space-y-2">
-      <li>Adapting MATLAB algorithms into ROS for the first time required not only translating syntax but also understanding ROS conventions for nodes, topics, and message structures.</li>
-      <li>Balancing limited project time with the complexity of real-time system integration added to the difficulty.</li>
-    </ul>
+    <!-- Two-column layout -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      
+      <!-- Left column: Challenges + Skills -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4 text-[#6E6E6E]">Challenges</h2>
+        <ul class="list-disc list-inside space-y-2 mb-8">
+          <li>Adapting MATLAB algorithms into ROS for the first time required not only translating syntax but also understanding ROS conventions for nodes, topics, and message structures.</li>
+          <li>Balancing limited project time with the complexity of real-time system integration added to the difficulty.</li>
+        </ul>
 
-    <!-- Skills -->
-    <h2 class="text-2xl font-semibold mt-8 mb-4 text-[#6E6E6E]">Skills Developed</h2>
-    <ul class="list-disc list-inside space-y-2">
-      <li>Strengthened knowledge of ROS architecture, real-time control algorithms, and multi-thruster coordination.</li>
-      <li>Improved debugging strategies, system-level thinking, and collaboration in a high-level research environment.</li>
-    </ul>
+        <h2 class="text-2xl font-semibold mb-4 text-[#6E6E6E]">Skills Developed</h2>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Strengthened knowledge of ROS architecture, real-time control algorithms, and multi-thruster coordination.</li>
+          <li>Improved debugging strategies, system-level thinking, and collaboration in a high-level research environment.</li>
+        </ul>
+      </div>
 
-    <!-- Picture Collage -->
-    <h2 class="text-2xl font-semibold mt-8 mb-4 text-[#6E6E6E]">Gallery</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-      <img src="../images/uv1.jpg" alt="Underwater Vehicle 1" class="rounded-lg shadow">
-      <img src="../images/uv2.jpg" alt="Control Code Screenshot" class="rounded-lg shadow">
-      <img src="../images/uv3.jpg" alt="Lab Setup" class="rounded-lg shadow">
+      <!-- Right column: Gallery -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4 text-[#6E6E6E]">Gallery</h2>
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
+          <img src="../images/uv1.jpg" alt="Underwater Vehicle 1" class="rounded-lg shadow">
+          <img src="../images/uv2.jpg" alt="Control Code Screenshot" class="rounded-lg shadow">
+          <img src="../images/uv3.jpg" alt="Lab Setup" class="rounded-lg shadow col-span-2">
+        </div>
+      </div>
     </div>
 
-    <!-- Files Section -->
-    <h2 class="text-2xl font-semibold mt-8 mb-4 text-[#6E6E6E]">Reports & Files</h2>
-    <ul class="list-disc list-inside">
-      <li><a href="../files/ros_control_report.pdf" class="text-blue-500 underline" target="_blank">Final Report (PDF)</a></li>
-      <li><a href="../files/ros_slides.pptx" class="text-blue-500 underline" target="_blank">Presentation Slides</a></li>
-    </ul>
+    <!-- Reports & Files -->
+    <div class="mt-16">
+      <h2 class="text-2xl font-semibold mb-4 text-[#6E6E6E]">Reports & Files</h2>
+      <ul class="list-disc list-inside">
+        <li><a href="../files/ros_control_report.pdf" class="text-blue-500 underline" target="_blank">Final Report (PDF)</a></li>
+        <li><a href="../files/ros_slides.pptx" class="text-blue-500 underline" target="_blank">Presentation Slides</a></li>
+      </ul>
+    </div>
 
     <!-- Back button -->
     <div class="mt-12 text-center">
