@@ -63,13 +63,24 @@
 
       <!-- Right column: Gallery -->
       <div>
-<!--         <h2 class="text-2xl font-semibold mb-4 text-[#6E6E6E]">Gallery</h2> -->
-        <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
-          <img src="group.jpg" alt="Group Pic" class="rounded-lg shadow w-100 h-200">
-          <img src="robot_cad.png" alt="Cad of robot" class="rounded-lg shadow col-span-2 w-100 h-200">
+        <h2 class="text-2xl font-semibold mb-4 text-[#6E6E6E]">Gallery</h2>
+        <div class="grid grid-cols-2 gap-6">
+          
+          <!-- Image 1 -->
+          <figure class="rounded-lg shadow overflow-hidden">
+            <img src="group.jpg" alt="Team photo" class="w-full h-64 object-cover">
+            <figcaption class="text-sm text-center mt-2 text-[#6E6E6E]">Our group on competition</figcaption>
+          </figure>
+          
+          <!-- Image 2 -->
+          <figure class="col-span-2 rounded-lg shadow overflow-hidden">
+            <img src="robot_cad.png" alt="CAD model of the robot" class="w-full h-80 object-cover">
+            <figcaption class="text-sm text-center mt-2 text-[#6E6E6E]">CAD design of our robot</figcaption>
+          </figure>
+      
         </div>
-      </div>
-    </div>
+</div>
+
 
     <!-- Video & Final Report Section -->
     <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
